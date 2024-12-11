@@ -1,0 +1,142 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #fff;
+}
+
+#fireworks {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 999;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.box {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.side-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.side-image {
+    width: 400px;
+    height: 400px;
+}
+
+.left-image,
+.right-image {
+    display: block;
+}
+
+.content {
+    width: 700px;
+    text-align: center;
+}
+
+.main-logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 2.5em;
+    color: #333;
+    margin: 10px;
+}
+
+.generator-box {
+    border-radius: 10px;
+    border: 3px solid #111;
+    padding: 20px;
+    margin: 20px 0;
+    max-width: 700px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    text-align: center;
+}
+
+.generator-box:hover {
+    transform: scale(1.02);
+}
+
+#winner-display {
+    font-size: 24px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 250px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .main-logo {
+        width: 80px;
+    }
+
+    .title {
+        font-size: 1.8em;
+    }
+
+    .generator-box {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    #winner-display {
+        font-size: 18px;
+    }
+
+    .side-image {
+        max-width: 200px;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.5em;
+    }
+
+    .generator-box {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .side-image {
+        max-width: 100px;
+        height: 200px;
+        margin: 5px;
+    }
+
+    .logo {
+        max-width: 70%;
+    }
+}
